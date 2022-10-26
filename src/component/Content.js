@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Board from "./Board";
 
 function Content() {
   return (
-    <div className='content'>Content</div>
-  )
+    <div className="content">
+      <Board />
+    </div>
+  );
 }
 
-export default Content
+export default Content;

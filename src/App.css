@@ -1,8 +1,36 @@
-.header-cover {
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header, .footer, .content {
+  width: 100%;
+  max-width: 1024px;
 }
 
 .header {
-  margin: auto;
+  padding: 15px;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+}
+
+.board {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Helper classes */
+.bg-gray {
+  background-color: gray;
 }
