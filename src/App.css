@@ -30,6 +30,14 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.score-board {
+
+  margin: 15px auto;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Helper classes */
 .bg-gray {
   background-color: gray;
