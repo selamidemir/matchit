@@ -13,11 +13,11 @@ function ScoreBoard() {
       {isGameOver && (
         <div className="modal">
           <div className="result-window">
-            <p>GAME OVER</p>
-            <p className="your-score">Your Score is { score }</p>
-            <p>
+            <div>GAME OVER</div>
+            <div className="your-score">Your Score is { score }</div>
+            <div>
               <button onClick={(e) => handleResetGame(e)}>NEW GAME</button>
-            </p>
+            </div>
           </div>
         </div>
       )}

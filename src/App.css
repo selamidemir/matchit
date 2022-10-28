@@ -119,8 +119,6 @@ header {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  font-size: 3em;
-  font-weight: 700;
   color:darkmagenta;
 }
 
@@ -128,10 +126,14 @@ header {
   border: 5px red ridge;
   background-color: white;
   width: 60%;
-  height: 40%;
+  min-height: 30%;
+  padding: auto;
+  font-size: 3em;
+  font-weight: 700;
 }
 
-.result-window p {
+.result-window div {
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -180,5 +182,12 @@ header {
 
   .item-image {
     max-width: 90%;
+  }
+
+  .result-window {
+    width: 90%;
+    padding-top: 35px;
+    font-size: 2em;
+    font-weight: 700;
   }
 }
