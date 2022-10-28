@@ -1,19 +1,29 @@
 import React from "react";
 import { useGame } from "../contexts/GameContext";
-import Score from "./Score";
 
 function ScoreBoard() {
-  const { maxScore, initGame, moves } = useGame();
-  const handleReset = e => {
+  const { score, maxScore, initGame, moves, isGameOver } = useGame();
+  const handleResetGame = (e) => {
     e.preventDefault();
     initGame();
-  }
-  
+  };
+
   return (
     <div className="score-board">
-      <button onClick={(e) => handleReset(e)}>Reset Game</button>
+      {isGameOver && (
+        <div className="modal">
+          <div className="result-window">
+            <p>GAME OVER</p>
+            <p className="your-score">Your Score is { score }</p>
+            <p>
+              <button onClick={(e) => handleResetGame(e)}>NEW GAME</button>
+            </p>
+          </div>
+        </div>
+      )}
+      <button onClick={(e) => handleResetGame(e)}>Reset Game</button>
       <span>Moves: {moves}</span>
-      <Score />
+      <span>Score: {score}</span>
       <span>Max Score: {maxScore}</span>
     </div>
   );

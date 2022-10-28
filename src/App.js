@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <header className="container bg-gray">
+      <header className="container bg-pink">
         <Header />
       </header>
       <main className="container">

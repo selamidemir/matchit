@@ -47,6 +47,7 @@ export const GameProvider = ({ children }) => {
     ];
     setMoves(0);
     setScore(0);
+    setVisibleItems(2);
     setIsGameOver(false);
     const allItems = [];
     for (let i = 0; i < 12; i++) {
