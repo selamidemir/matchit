@@ -4,7 +4,7 @@ React Js ile geliştirilmiş bir taş eşleştirme oyunu.
 
 ## Demo
 
-Matchit oyununu hemen oynamak için [tıklayınız(https://matchit-game.herokuapp.com/ "Matchit Game")].
+Matchit oyununu hemen oynamak için [tıklayınız](https://matchit-game.herokuapp.com/ "Matchit Game").
 
 ## Kullanılan Teknolojiler
 
